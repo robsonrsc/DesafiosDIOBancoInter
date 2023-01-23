@@ -114,7 +114,7 @@ public class Main {
          * programa para saber, de acordo com o número de pessoas na fila, quantas entrariam no camarote.
          */
 
-        Scanner leitor = new Scanner(System.in);
+      /*  Scanner leitor = new Scanner(System.in);
         int tamanhoDaFila = leitor.nextInt();
         int pessoasNoCamarote = 0;
 
@@ -124,7 +124,12 @@ public class Main {
             System.out.println(camarote + " pessoas no camarote");
         }else {
             int camarote = ((tamanhoDaFila-1)/2)+1;
-            System.out.println(camarote + " pessoas no camarote");
+            System.out.println(camarote + " pessoas no camarote");*/
+
+        Scanner leitor = new Scanner(System.in);
+        int tamanhoDaFila = leitor.nextInt();
+        int camarote = (tamanhoDaFila % 2 == 0) ? (tamanhoDaFila/2) : ((tamanhoDaFila-1)/2)+1;
+        System.out.println(camarote + " pessoas no camarote");
 
         }
 
@@ -133,4 +138,3 @@ public class Main {
 
 
 
-}
